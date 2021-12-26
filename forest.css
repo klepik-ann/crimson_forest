@@ -287,6 +287,7 @@ background-position: 100% 0;
 	line-height: 1.5rem;
 	/* border-bottom: #CB4D64 0.5px solid; */
 	margin: 0 1.9rem 2.1rem 1.9rem;
+	text-decoration: underline;
 }
 
 
@@ -387,6 +388,7 @@ color: #fff;
 }
 .six a {
 	color: #CB4D64;
+	text-decoration: underline;
 }
 .seven li{
 	display: inline-block;
