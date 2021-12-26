@@ -238,6 +238,8 @@ span { color: #CB4D64;}
 .item_items_text>p {
 	color: #000;
 }
+
+
 .service {
 	background-color:  #331E28;
 	background-image: url(img/back.svg);
@@ -253,11 +255,8 @@ background-position: 100% 0;
 	font-size: 4.12rem;
 	line-height: 110%;
 }
+
 .service_flex {
-	/* display: flex;
-	flex-wrap: wrap; */
-	/* gap: 10px; */
-	/* margin-bottom: 7.3rem; */
 	margin-bottom: 128px;
 }
 .service_items {
@@ -289,6 +288,8 @@ background-position: 100% 0;
 	/* border-bottom: #CB4D64 0.5px solid; */
 	margin: 0 1.9rem 2.1rem 1.9rem;
 }
+
+
 .example_img {
 	display: inline-block;
 	width: 33%;
@@ -310,6 +311,8 @@ background-position: 100% 0;
 	margin-top: 3.75rem;
 	text-align: center;
 }
+
+
 .reviews_header{
 
 }
@@ -324,6 +327,21 @@ background-position: 100% 0;
 	margin-top: 15rem;
 	text-align: center;
 }
-@media screen {
-	
+
+
+footer {
+	background: #331E28;
+}
+
+.footer_flex {
+	display: inline-block;
+	width: 23%;
+	border: 1px solid #fff;
+}
+
+.first {
+	color: #fff;
+	font-family: "Gotham Pro";
+	font-size: 16px;
+	line-height: 40px;
 }

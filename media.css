@@ -1,6 +1,4 @@
-body {
-	color: rebeccapurple;
-}
+
 header label:hover {
 cursor: pointer;
 }
@@ -222,5 +220,95 @@ background-position: 100% 0;
 	background-color:  #331E28;
 	background-image: url(img/back.svg);
 	background-repeat: no-repeat;
-	background-position: 100% 0;
+	background-position: 10% 0;
+	background-size: 600px 600px;
 }
+.service_header {
+	margin: 54px 0 30px 0;
+}
+
+
+.service_flex {
+	/* display: flex;
+	flex-wrap: wrap;
+	gap: 10px; 
+	margin-bottom: 7.3rem; */
+	margin-bottom: 53px;
+	display: flex;
+	align-items: wrap;
+	flex-wrap: wrap;
+}
+.service_items {
+	max-height: 193px;
+	max-width: 132px;
+	border-radius: 16px;
+	width: 50%;
+	margin: 5px;
+}
+.service_items_icon {
+	margin: 17px 0 5px 14px;
+}
+.service_items_icon img {
+	width: 40px;
+	height: 40px;
+	margin-bottom: 26px;
+}
+.service_items_text{
+	font-family: "Gotham Pro";
+	font-size: 10px;
+	line-height: 15px;
+	color: #FFFFFF;
+	height: 60px;
+	margin: 0 12px 0 18px;
+}
+.demand {
+	color: #CB4D64;
+	font-size: 10px;
+	line-height: 15px;
+	margin: 10px 0 10px 18px;
+
+}
+
+
+.example_flex img {
+	width: 132px;
+	height: 108px;
+}
+
+.example_img {
+	display: inline-block;
+	width: 45%;
+	margin: 5px;
+}
+.example_header {
+	font-family: "Bebas Neue Cyrillic";  
+	font-size: 28px;
+	line-height: 30.8px;
+	margin: 55px 67px 30px 0;
+}
+/* .example_flex {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 1.8rem;
+} */
+.example_btn {
+	margin-top: 30px;
+	text-align: center;
+}
+.example_btn button {
+	font-size: 12px;
+	line-height: 13.2px;
+}
+
+.reviews_footer {
+	font-size: 70px;
+	color: #FFFFFF;
+	line-height: 77px;
+	margin-top: 15rem;
+	text-align: center;
+	width: 200%;
+	margin-left: -20px;
+	margin-bottom: 0px;
+}
+
+
