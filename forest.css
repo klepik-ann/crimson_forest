@@ -334,14 +334,61 @@ footer {
 }
 
 .footer_flex {
-	display: inline-block;
-	width: 23%;
-	border: 1px solid #fff;
+	width: 25%;
 }
 
 .first {
 	color: #fff;
 	font-family: "Gotham Pro";
-	font-size: 16px;
+	font-size: 14px;
 	line-height: 40px;
+}
+.first a {
+	color: #fff;
+}
+.footer_flex_conteiner {
+	display: flex;
+  flex-wrap: wrap;
+  align-content: flex-start;
+  margin-top: 108px;
+}
+.footer_flex {
+	margin-bottom: 84px;
+}
+.second button{
+font-size: 14px;
+}
+.footer_flex_third {
+	font-size: 14px;
+	line-height: 150%;
+	color: #6C5560;;
+}
+.third {
+	display: flex;
+	flex-wrap: wrap;
+	align-content: space-between;
+}
+.four {
+	font-size: 14px;
+	line-height: 150%;
+	color: #6C5560;;
+}
+.four a{
+	color: #CB4D64;;
+}
+.up {
+	margin-bottom: 37px;
+}
+.five p:first-child {
+color: #fff;
+}
+.six p{
+	color: #6C5560;
+}
+.six a {
+	color: #CB4D64;
+}
+.seven li{
+	display: inline-block;
+	margin-right: 15px;
 }
