@@ -48,7 +48,10 @@ background: #E5E5E5;
 	margin: 0px auto;
 	padding: 15px;
 }
-
+#dws-menu, 
+header label{
+	display: none;
+}
 @font-face {
 	font-family: "Gotham Pro";
 	src: url("fonts/gothampro.ttf") format("truetype");
@@ -65,8 +68,9 @@ background: #E5E5E5;
 	/* padding: 0.99rem; */
 	display: flex;
 }
-.we ul {
-	display: flex;
+
+.we li {
+	display: inline-block;
 }
 .we {
 	padding-top: 2.1rem;
@@ -87,6 +91,8 @@ background: #E5E5E5;
    border-radius: 16px;
 	font-family: "Gotham Pro";
 	font-size: 1rem;
+	color: #CB4D64;
+
 }
 .we a {
 	margin: 1.56rem;
@@ -96,10 +102,7 @@ background: #E5E5E5;
 .header_body {
 	margin-top: 2.5rem;
 }
-.forest_one {
-	font-size: ;
 
-}
 .header_logo_forest {
 	display: flex;
    flex-direction: column;
@@ -124,8 +127,8 @@ background: #E5E5E5;
    border-radius: 1rem;
 	color: #fff;
 	font-size: 1.15rem;
-	
 }
+
 .banner_row {
 	display: flex;
 	justify-content: space-between;
@@ -157,17 +160,14 @@ padding-top: 40px;
 color: #CB4D64;;
 }
 .banner_body_two { 
-/* margin-top: 30px;
-margin-bottom: 64px; */
+
 margin: 1.9rem 3.4rem 4rem 0rem;
 font-size: 1.13rem;
 line-height: 1.7rem;
 font-family: "Gotham Pro";
-/* border: #CB4D64 1px solid; */
+
 }
-span {
-	color: #CB4D64;
-}
+span { color: #CB4D64;}
 .text {
 	font-size: 1.125rem;
 	font-family: "Gotham Pro";
@@ -175,35 +175,49 @@ span {
 	margin-top: 1.8rem;
 	line-height: 150%;
 }
-.left {
-	
-}
+
 
 .about_flex {
 	display: flex;
-	justify-content: space-between;
+	flex-wrap: wrap;
+	/* justify-content: space-between; */
 }
-.about_right {
-	margin-left: 26.5px;
-	/* padding-top: -520px; */
-	margin-top: -4.4rem;
-	margin-bottom: -1.9rem;
+.about_right{
+	width: 30%;
+	margin-left: -100px;
 }
 .about_left {
-	margin-right: 26.5px;
+	margin-right: 265px;
 }
+
+.about_right img {
+	margin-top: -100px;
+	margin-bottom: -100px;
+}
+.about_three {
+	width: 50%;
+	margin-top: -250px;
+}
+
+
+
+
 .item_flex {
-	display: flex;
-	justify-content: space-between;
 	margin-bottom: 8.4rem;
 }
 .item_items {
+	/* max-width: 16.9rem;
+	max-height: 16.9rem; */
+	display: inline-block;/*чтобы в ряд шли блоки */
+	width: 23%;
    border-radius: 1.88rem;
-	max-width: 16.9rem;
-	max-height: 16.9rem;
 	background-color: #FFFFFF;
 	color: #CB4D64;
+	margin: 15px 15px 0 0;
 }
+/* .item_items:last-child {
+	margin-left: 0;
+} */
 .item_items:hover {
 	background-color: #CB4D64;
 	color: #FFFFFF;
@@ -240,16 +254,20 @@ background-position: 100% 0;
 	line-height: 110%;
 }
 .service_flex {
-	display: flex;
-	flex-wrap: wrap;
-	gap: 10px;
-	margin-bottom: 7.3rem;
+	/* display: flex;
+	flex-wrap: wrap; */
+	/* gap: 10px; */
+	/* margin-bottom: 7.3rem; */
+	margin-bottom: 128px;
 }
 .service_items {
 	max-height: 20.18rem;
 	max-width: 16.87rem;
 	background: #3E2832;
-border-radius: 30px;
+	border-radius: 30px;
+	display: inline-block;/**/
+	width: 23%;
+	margin: 10px 15px 10px 0;
 /* margin-left: 1.87rem; */
 }
 .service_items_icon {
@@ -271,18 +289,41 @@ border-radius: 30px;
 	/* border-bottom: #CB4D64 0.5px solid; */
 	margin: 0 1.9rem 2.1rem 1.9rem;
 }
+.example_img {
+	display: inline-block;
+	width: 33%;
+	margin-bottom: 1.5rem;
+	/* margin: 0 0.8rem 0.8rem 0; */
+}
 .example_header {
 	font-family: "Bebas Neue Cyrillic";  
 	font-size: 4.12rem;
 	line-height: 4.5rem;
 	margin: 9.3rem 0 3.5rem;
 }
-.example_flex {
+/* .example_flex {
 	display: flex;
 	flex-wrap: wrap;
 	gap: 1.8rem;
-}
+} */
 .example_btn {
 	margin-top: 3.75rem;
 	text-align: center;
+}
+.reviews_header{
+
+}
+.reviews {
+	height: 500px;
+}
+.reviews_footer {
+	font-family: "Bebas Neue Cyrillic";  
+	font-size: 11.66rem;
+	color: #FFFFFF;
+	line-height: 12.82rem;
+	margin-top: 15rem;
+	text-align: center;
+}
+@media screen {
+	
 }

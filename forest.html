@@ -8,15 +8,30 @@
 	<!-- <link rel="stylesheet" href="https://unpkg.com/flexboxgrid2@7.2.1/flexboxgrid2.min.css"> -->
 	<title>Document</title>
 	<link rel="stylesheet" href="forest.css">
+	<link rel="stylesheet" href="media.css" media="all and (max-width:320px)">
 
 </head>
 
 <body>
 	<div class="wrapper">
 		<section class="sahalin">
+
+			<!-- <input type="checkbox" id="dws-menu">
+			<div class="leb-menu">
+				<label for="dws-menu"><img src="img/burger.svg"></label>
+			</div> -->
+
+
 			<nav class="header">
 				<div class="container">
 					<header class="header_row">
+
+						<input type="checkbox" id="dws-menu">
+						<div class="leb-menu">
+							<label for="dws-menu"><img src="img/burger.svg"></label>
+						</div>
+
+
 						<div class="header_body">
 							<div class="header_logo">
 								<img src="img/Group 148.svg" alt="logo" width="76.97px" height="86.41">
@@ -27,10 +42,10 @@
 							</div>
 							<div class="we">
 								<ul>
-									<li><a href="#">О нас</a></li>
-									<li><a href="#">Услуги</a></li>
-									<li><a href="#">Примеры работ</a></li>
-									<li><a href="#">Отзывы</a></li>
+									<li><a href="#about">О нас</a></li>
+									<li><a href="#service">Услуги</a></li>
+									<li><a href="#example">Примеры работ</a></li>
+									<li><a href="#reviews">Отзывы</a></li>
 									<li><a href="#">Контакты</a></li>
 								</ul>
 							</div>
@@ -41,6 +56,7 @@
 					</header>
 				</div>
 			</nav>
+
 			<main class="content">
 				<div class="banner">
 					<div class="container">
@@ -64,13 +80,19 @@
 						</div>
 					</div>
 				</div>
+
 				<div class="about">
 					<div class="container">
 						<div class="about_row">
 							<div class="about_flex">
 								<div class="about_left">
-									<p class="type">ПРЕЖДЕ ЧЕМ ИДТИ В ЛЕС,</p>
+									<p id="about" class="type">ПРЕЖДЕ ЧЕМ ИДТИ В ЛЕС,</p>
 									<p class="type">О НЕМ<SPAN> НУЖНО УЗНАТЬ...</SPAN></p>
+								</div>
+								<div class="about_right">
+									<img src="img/card.svg" width="428.096" height="569.3" alt="banner">
+								</div>
+								<div class="about_three">
 									<p class="text">Багровый лес – это
 										рекламный центр полного цикла в Южно-Сахалинске. Рекламные услуги от дизайна
 										до монтажных работ на собственных автовышках, по выгодным ценам.</p>
@@ -80,13 +102,14 @@
 										Здесь можно разместить больше текста о компании Багровый Лес.</p>
 									<p class="text"><span>Подробнее...</span></p>
 								</div>
-								<div class="about_right">
-									<img src="img/card.svg" width="428.096" height="569.3" alt="banner">
-								</div>
 							</div>
 						</div>
 					</div>
 				</div>
+
+
+
+
 				<section class="item">
 					<div class="container">
 						<div class="item_row">
@@ -112,7 +135,8 @@
 										<p>893</p>
 									</div>
 									<div class="item_items_text">
-										<p>выполненных заказа</p>
+										<p>выполненных</p>
+										<p>заказа</p>
 									</div>
 								</div>
 								<div class="item_items">
@@ -127,9 +151,11 @@
 						</div>
 					</div>
 				</section>
+
+
 				<section class="service">
 					<div class="container">
-						<h2 class="service_header">
+						<h2 id="service" class="service_header">
 							<p class="what">что можно найти <span>в «лесу»</span></p>
 						</h2>
 						<div class="service_flex">
@@ -199,24 +225,40 @@
 						</div>
 					</div>
 				</section>
+
+
 				<section class="example">
 					<div class="container">
 						<div class="example_header">
-							<h2 class="example_text"><span>Примеры</span> работ</h2>
+							<h2 id="example" class="example_text"><span>Примеры</span> работ</h2>
 						</div>
 						<div class="example_flex">
-							<div class="example_img"><img src="img/ex1.svg" width="296" height="240"></div>
-							<div class="example_img"><img src="img/ex2.svg" width="296" height="240"></div>
-							<div class="example_img"><img src="img/ex3.svg" width="296" height="240"></div>
-							<div class="example_img"><img src="img/ex4.svg" width="296" height="240"></div>
-							<div class="example_img"><img src="img/ex5.svg" width="296" height="240"></div>
-							<div class="example_img"><img src="img/ex6.svg" width="296" height="240"></div>
+							<div class="example_img"><img src="img/ex1.svg" width="325.6" height="264"></div>
+							<div class="example_img"><img src="img/ex2.svg" width="325.6" height="264"></div>
+							<div class="example_img"><img src="img/ex3.svg" width="325.6" height="264"></div>
+							<div class="example_img"><img src="img/ex4.svg" width="325.6" height="264"></div>
+							<div class="example_img"><img src="img/ex5.svg" width="325.6" height="264"></div>
+							<div class="example_img"><img src="img/ex6.svg" width="325.6" height="264"></div>
 						</div>
 						<div class="example_btn">
 							<button class="btn btn_call">Показать больше</button>
 						</div>
 					</div>
 				</section>
+				<section class="reviews">
+					<div class="container">
+						<h2 id="reviews" class="type">Отзывы</h2>
+					</div>
+					<div class="reviews_footer">
+						<h1>Отзывы наших клиентов</h1>
+					</div>
+				</section>
+				<section class="map">
+					<!-- <img src="img/map.svg"> -->
+				</section>
+				<footer>
+
+				</footer>
 			</main>
 		</section>
 	</div>
