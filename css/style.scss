@@ -1,0 +1,237 @@
+@font-face {
+    font-family: Bebas Neue;
+    src: url(../fonts/BebasNeue.ttf);
+}
+@font-face {
+    font-family: GothamPro;
+    src: url(../fonts/GothamPro.ttf);
+}
+body,
+html {
+    height: 100%;
+    padding: 0;
+    margin: 0;
+    overflow-x: hidden;
+    background-color: #f1f1f1;
+}
+
+div {
+    box-sizing: border-box;
+}
+.container {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 230px;
+    padding-left: 200px;
+    background-image: url(../img/title.png);
+    background-repeat: no-repeat;
+    background-position: center bottom, top left;
+    background-size: 100% auto;
+    height: 100%;
+}
+
+.circle-wrapper {
+    position: absolute;
+    top: 20px;
+    right: -10%;
+    display: flex;
+    justify-content: flex-end;
+    width: 50%;
+    &::after {
+        content: "“";
+        position: absolute;
+        font-family: "Bebas Neue";
+        color: #d9d9d9;
+        top: -15%;
+        left: 56%;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 286px;
+        text-transform: uppercase;
+        transform: rotate(-180deg);
+    }
+}
+.slider-wrapper {
+    width: 50%;
+}
+.currentSlide {
+    opacity: 0;
+    transition: all 1s;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    margin-left: -100px;
+    height: 20px;
+    img {
+        transition: all 1s;
+        border-radius: 100%;
+        width: 270px;
+    }
+}
+
+.prevSlider {
+    opacity: 0;
+    transition: all 1s;
+    position: relative;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 20px;
+    margin-left: -50px;
+    z-index: 100;
+    img {
+        transition: all 0.5s;
+        border-radius: 100%;
+        width: 130px;
+        transform: rotate(48deg);
+    }
+}
+
+.circle-slider {
+    transition: all 2s;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-width: 700px;
+    min-height: 700px;
+    border-radius: 100%;
+    border: 2px solid #e7e7e7;
+    .review {
+        position: absolute;
+        width: 100%;
+        height: 20px;
+        .img {
+            position: relative;
+            left: -10px;
+            background: linear-gradient(0deg, #cb4d64, #cb4d64);
+            width: 20px;
+            height: 20px;
+            border-radius: 100%;
+            z-index: 1;
+            img {
+                display: none;
+            }
+        }
+    }
+}
+.slider__dot-image {
+    display: none;
+}
+.slider__review {
+    font-family: "GothamPro";
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 100px;
+    &-title {
+        font-family: "Bebas Neue";
+        font-style: normal;
+        font-weight: normal;
+        font-size: 66px;
+        text-transform: uppercase;
+        color: #331e28;
+    }
+    &-content {
+        font-style: normal;
+        font-weight: normal;
+        font-size: 16px;
+        color: #321e1f;
+        margin: 30px 0 75px 0px;
+    }
+    &-name {
+        font-style: normal;
+        font-weight: bold;
+        font-size: 18px;
+        color: #cb4d64;
+        text-transform: uppercase;
+        margin-bottom: 5px;
+    }
+    &-position {
+        font-style: normal;
+        font-weight: normal;
+        font-size: 16px;
+        color: #9d9d9d;
+    }
+}
+
+.slider__btns {
+    display: flex;
+    align-items: center;
+    .slider-next {
+        img {
+            transform: rotate(180deg);
+        }
+    }
+    img {
+        width: 30px;
+        height: 25px;
+    }
+
+    .btn {
+        &:hover {
+            filter: invert(42%) sepia(63%) saturate(3740%) hue-rotate(324deg) brightness(90%) contrast(75%);
+        }
+    }
+}
+
+.slider-counter {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    color: #b6b6b6;
+    margin: 0 28px;
+    span {
+        font-family: "GothamPro";
+    }
+}
+
+.slider-list {
+    position: relative;
+}
+
+@media (max-width: 500px) {
+    .container {
+        padding: 55px 20px;
+        max-width: 100%;
+    }
+    .circle-wrapper {
+        display: none;
+    }
+    .slider-wrapper {
+        width: 100%;
+    }
+    .slider__dot-image {
+        display: flex;
+        margin-right: 20px;
+        img {
+            width: 75px;
+            height: 75px;
+        }
+    }
+    .slider__review {
+        margin-bottom: 35px;
+        &-title {
+            font-size: 28px;
+        }
+        &-content {
+            width: 100%;
+            font-size: 12px;
+        }
+        &-name {
+            font-size: 12px;
+        }
+        &-position {
+            font-size: 10px;
+        }
+        &-footer {
+            display: flex;
+            align-items: center;
+            margin-bottom: 50px;
+        }
+        &-user {
+            display: flex;
+            flex-direction: column;
+        }
+    }
+}
