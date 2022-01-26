@@ -4,7 +4,13 @@ $(document).ready(function () {
 
 		$('.header_list').slideToggle(300);
 		$('.call').slideToggle(300);
-	})
+	});
+
+	$('#show_more_btn').click(showMoreImg);
+
+	fetch("test.php")
+		.then(response => response.text())
+		.then(commits => console.log(commits));
 });
 
 
@@ -59,3 +65,24 @@ function readMore() {
 		more.style.display = "inline";
 	}
 };
+
+
+/*кнопка показать больше в примерах работ */
+function showMoreImg() {
+	const tegImgList = document.getElementsByClassName('example_img_hiden');
+
+	if (tegImgList.length == 0) {
+		Array.from(document.getElementsByClassName("example_img_show")).forEach(e => {
+			e.classList.remove("example_img_show");
+			e.classList.add("example_img_hiden");
+
+		})
+		document.getElementById("show_more_btn").innerText = "Показать больше";
+	} else {
+		document.getElementById("show_more_btn").innerText = "Скрыть";
+		Array.from(document.getElementsByClassName("example_img_hiden")).forEach(e => {
+			e.classList.remove("example_img_hiden");
+			e.classList.add("example_img_show");
+		})
+	}
+}
