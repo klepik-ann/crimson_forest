@@ -24,7 +24,7 @@
 									<p class="forest_two">ЛЕС</p>
 								</div>
 							</div>
-
+							<!--выкатить меню с телефона-->
 							<div class="menuToggle icon">
 								<div class="hamburger">
 								</div>
@@ -43,22 +43,37 @@
 
 							<div class="call">
 								<a href="#" class="btn btn_call open_pop_up">Заказать звонок</a>
-								<!-- <button class="btn btn_call">Заказать звонок</button> -->
+
+								<!--Обратная форма-->
+								<div class="pop_up" id="pop_up">
+									<div class="pop_up_container">
+										<div class="pop_up_body">
+											<p>Заказать звонок</p>
+											<form action="">
+												<input type="text" placeholder="Имя">
+												<input type="text" placeholder="Телефон">
+												<button type="submit">Заказать звонок</button>
+											</form>
+											<div class="pop_up_close" id="pop_up_close">&#10006</div>
+										</div>
+									</div>
+								</div>
 							</div>
 
 							<div class="pop_up" id="pop_up">
 								<div class="pop_up_container">
-									<div class="pop_up_body" id="pop_up_body">
+									<div class="pop_up_body">
 										<p>Заказать звонок</p>
 										<form action="">
 											<input type="text" placeholder="Имя">
 											<input type="text" placeholder="Телефон">
 											<button>Заказать звонок</button>
 										</form>
-										<div class="pop_up_close">&#10006</div>
+										<div class="pop_up_close" id="pop_up_close">&#10006</div>
 									</div>
 								</div>
 							</div>
+
 						</div>
 					</header>
 				</div>
@@ -76,9 +91,8 @@
 								<p class="banner_body_two">Замер в черте города – <b>бесплатно</b>! Ваш бизнес увидит весь
 									Сахалин.</p>
 								<div class="app">
-									<!-- <a href="#" class="btn btn_app" id="open_pop_up">Оставить заявку</a> -->
+									<a href="#" class="btn btn_app open_pop_up">Оставить заявку</a>
 
-									<!-- <button class="btn btn_app" id="open_pop_up">Оставить заявку</button> -->
 								</div>
 							</div>
 							<div class="banner_body_left">
@@ -100,14 +114,24 @@
 									<img src="img/card.svg" width="428.096" height="569.3" alt="banner">
 								</div>
 								<div class="about_three">
-									<p class="text">Багровый лес – это
-										рекламный центр полного цикла в Южно-Сахалинске. Рекламные услуги от дизайна
-										до монтажных работ на собственных автовышках, по выгодным ценам.</p>
-									<p class="text">Здесь можно разместить больше текста о компании Багровый Лес.Здесь можно
-										разместить
-										больше текста о компании Багровый Лес.
-										Здесь можно разместить больше текста о компании Багровый Лес.</p>
-									<p class="text"><span>Подробнее...</span></p>
+									<p class="text">Производственно-Рекламный Центр «Багровый Лес» – команда профессионалов
+										своего дела. Начав работу в 2010 году, мы приобрели колоссальный опыт в разработке и
+										изготовлении наружной рекламы всех видов и уровней сложности. Постоянно развиваясь, мы
+										осваиваем и предлагаем своим заказчикам и партнерам все больше направлений и возможностей
+										для реализации их проектов. Для нас нет невыполнимых задач!</p>
+
+									<p class="text">Собственное производство на территории более 1000 м2 и автопарк спецтехники,
+										помогает нам поддерживать низкий<span class="text" id="dots">...</span>
+										<span class="text" id="more"> уровень цен, а качество исполнения обеспечивается широким
+											спектром оборудования и надежными поставщиками материалов.<br> <br>
+											Долгие годы успешной работы позволяют нам гарантировать лучший
+											результат из
+											возможных. В работе с каждым клиентом Компания Багровый Лес зарекомендовалсебя как
+											добросовестный и надежный исполнитель. Результатом
+											нашего труда за все годы работы стала уверенная позиция одной из самых передовых
+											рекламно-производственных компаний полного цикла Сахалинской области.</span>
+									</p>
+									<button class="text" id="button_more" onclick="readMore()">Подробнее</button>
 								</div>
 							</div>
 						</div>
@@ -120,7 +144,7 @@
 							<div class="item_flex">
 								<div class="item_items">
 									<div class="item_items_numb">
-										<p>20</p>
+										<p>12</p>
 									</div>
 									<div class="item_items_text">
 										<p>лет на рынке наружной рекламы</p>
@@ -128,29 +152,32 @@
 								</div>
 								<div class="item_items">
 									<div class="item_items_numb">
-										<p>32</p>
+										<p>23</p>
 									</div>
 									<div class="item_items_text">
 										<p>сотрудника работают в штате</p>
 									</div>
 								</div>
+
 								<div class="item_items">
 									<div class="item_items_numb">
-										<p>893</p>
+										<p>14712</p>
 									</div>
 									<div class="item_items_text">
 										<p>выполненных</p>
 										<p>заказа</p>
 									</div>
+
 								</div>
 								<div class="item_items">
 									<div class="item_items_numb">
-										<p>214</p>
+										<p>100</p>
 									</div>
 									<div class="item_items_text">
 										<p>государственых контрактов</p>
 									</div>
 								</div>
+
 							</div>
 						</div>
 					</div>
@@ -167,34 +194,37 @@
 								<div class="service_items_icon">
 									<img src="img/1.svg" width="80" height="80">
 								</div>
-								<p class="service_items_text">Широкоформатная<br> и интерьерная печать<br> на любых материалах
+								<p class="service_items_text">Печать баннеров, плакатов, наклеек
 								</p>
-								<p class="demand">Оставить заявку</p>
+								<a class="demand open_pop_up">Заказать звонок</a>
+
+								<!-- <p class="demand">Оставить заявку</p> -->
 							</div>
 
 							<div class="service_items">
 								<div class="service_items_icon">
 									<img src="img/2.svg" width="80" height="80">
 								</div>
-								<p class="service_items_text">Световые вывески:<br> буквы, короба, фризы,<br> аншлаги </p>
-								<p class="demand">Оставить заявку</p>
+								<p class="service_items_text">УФ печать: Тактильные таблички, планы эвакуации, печать на жестких
+									материалах
+									<a class="demand open_pop_up">Заказать звонок</a>
 							</div>
 
 							<div class="service_items">
 								<div class="service_items_icon">
 									<img src="img/3.svg" width="80" height="80">
 								</div>
-								<p class="service_items_text">Таблички из ПВХ,<br> композита, оргстекла,<br> акрила, ПЭТ, стенды
+								<p class="service_items_text">Световые вывески, короба, буквы, гибкий неон
 								</p>
-								<p class="demand">Оставить заявку</p>
+								<a class="demand open_pop_up">Заказать звонок</a>
 							</div>
 
 							<div class="service_items">
 								<div class="service_items_icon">
 									<img src="img/4.svg" width="80" height="80">
 								</div>
-								<p class="service_items_text">Нестандартные<br> конструкции<br> из металла и дерева </p>
-								<p class="demand">Оставить заявку</p>
+								<p class="service_items_text">Стенды, таблички, указатели</p>
+								<a class="demand open_pop_up">Заказать звонок</a>
 							</div>
 
 
@@ -202,24 +232,95 @@
 								<div class="service_items_icon">
 									<img src="img/5.svg" width="80" height="80">
 								</div>
-								<p class="service_items_text">Монтаж наружной<br> рекламы и конструкций<br> любой сложности</p>
-								<p class="demand">Оставить заявку</p>
+								<p class="service_items_text">Сувенирная продукция, полиграфия</p>
+								<a href="#" class="demand open_pop_up">Заказать звонок</a>
 							</div>
 
 							<div class="service_items">
 								<div class="service_items_icon">
 									<img src="img/6.svg" width="80" height="80">
 								</div>
-								<p class="service_items_text">Лазерная резка,<br> фрезеровка,<br> гравировка, 3D</p>
-								<p class="demand">Оставить заявку</p>
+								<p class="service_items_text">Лазерная и фрезерная резка, гравировка, раскрой материалов</p>
+								<a class="demand open_pop_up">Заказать звонок</a>
 							</div>
 
 							<div class="service_items">
 								<div class="service_items_icon">
 									<img src="img/7.svg" width="80" height="80">
 								</div>
-								<p class="service_items_text">Оформление магазинов,<br> входных групп,<br> декорации и т.д.</p>
-								<p class="demand">Оставить заявку</p>
+								<p class="service_items_text">Оформление точек продаж, учреждений, декораций</p>
+								<a class="demand open_pop_up">Заказать звонок</a>
+							</div>
+
+							<div class="service_items">
+								<div class="service_items_icon">
+									<img src="img/1.svg" width="80" height="80">
+								</div>
+								<p class="service_items_text">Конструкции из дерева и металла по индивидуальным проектам
+								</p>
+								<a class="demand open_pop_up">Заказать звонок</a>
+
+								<!-- <p class="demand">Оставить заявку</p> -->
+							</div>
+
+
+							<div class="service_items">
+								<div class="service_items_icon">
+									<img src="img/1.svg" width="80" height="80">
+								</div>
+								<p class="service_items_text">Широкоформатная<br> и интерьерная печать<br> на любых материалах
+								</p>
+								<a class="demand open_pop_up">Заказать звонок</a>
+
+								<!-- <p class="demand">Оставить заявку</p> -->
+							</div>
+
+
+
+							<div class="service_items">
+								<div class="service_items_icon">
+									<img src="img/1.svg" width="80" height="80">
+								</div>
+								<p class="service_items_text">Монтаж наружных конструкций и рекламы любой сложности (сюда же
+									входит брендирование авто)
+								</p>
+								<a class="demand open_pop_up">Заказать звонок</a>
+
+								<!-- <p class="demand">Оставить заявку</p> -->
+							</div>
+
+
+							<div class="service_items">
+								<div class="service_items_icon">
+									<img src="img/1.svg" width="80" height="80">
+								</div>
+								<p class="service_items_text">Малоэтажное строительство: теплые бытовые модули/павильоны/домики
+								</p>
+								<a class="demand open_pop_up">Заказать звонок</a>
+
+								<!-- <p class="demand">Оставить заявку</p> -->
+							</div>
+
+							<div class="service_items">
+								<div class="service_items_icon">
+									<img src="img/1.svg" width="80" height="80">
+								</div>
+								<p class="service_items_text">Услуги чистки от снега, наледи и сосулек
+								</p>
+								<a class="demand open_pop_up">Заказать звонок</a>
+
+								<!-- <p class="demand">Оставить заявку</p> -->
+							</div>
+
+							<div class="service_items">
+								<div class="service_items_icon">
+									<img src="img/1.svg" width="80" height="80">
+								</div>
+								<p class="service_items_text">Помывка фасадов и рекламных конструкций
+								</p>
+								<a class="demand open_pop_up">Заказать звонок</a>
+
+								<!-- <p class="demand">Оставить заявку</p> -->
 							</div>
 						</div>
 					</div>
@@ -281,29 +382,25 @@
 							</div>
 							<div class="footer_flex second">
 								<div class="app">
-									<button class="btn btn_app">Оставить заявку</button>
+									<button class="btn btn_app open_pop_up">Оставить заявку</button>
 								</div>
 							</div>
 							<div class="footer_flex third">
 								<section class="footer_flex_third">
 									<p>ООО “Багровый Лес”</p>
-									<p>ИНН 000000000000</p>
+									<p>ИНН 6501276434</p>
 								</section>
 								<section class="footer_flex_third">
 									<p>Офис в г. Сахалин</p>
-									<p>ул. Пушкина 31а, оф. 501</p>
-									<p>тел: +7 (391) 000-00-00</p>
+									<p>ул. Карпатская 3, стр.4.</p>
+									<p>тел: +7 (4242) 39‒05‒10</p>
 									<p>пн-пт с 9:00 до 18:00</p>
 								</section>
 							</div>
 							<div class="footer_flex four">
 								<section class="footer_flex_four up">
 									<p>E-mail</p>
-									<p><a href="">info@bagroviyles.ru</a></p>
-								</section>
-								<section class="footer_flex_four down">
-									<p>Карьера в компании</p>
-									<p><a href="">hr@bagroviyles.ru</a></p>
+									<p><a href="mailto390510@65reklama.ru">390510@65reklama.ru</a></p>
 								</section>
 							</div>
 							<div class="footer_flex five">
@@ -321,10 +418,9 @@
 							</div>
 							<div class="footer_flex seven">
 								<ul>
-									<li><a href=""><img src="img/vk.svg"></a></li>
-									<li><a href=""><img src="img/inst.svg"></a></li>
-									<li><a href=""><img src="img/youtube.svg"></a></li>
-									<li><a href=""><img src="img/wa.svg"></a></li>
+									<li><a href="https://www.instagram.com/bagroviy_les/" target="blank"><img
+												src="img/inst.svg"></a></li>
+									<li><a href="https://wa.me/+74242390510" target="blank"><img src="img/wa.svg"></a></li>
 								</ul>
 							</div>
 						</div>
